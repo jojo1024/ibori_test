@@ -2,7 +2,7 @@
   "expo": {
     "name": "Ibori",
     "slug": "Ibori",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "scheme": "Ibori",
     "orientation": "portrait",
     "icon": "./assets/images/ibori.jpeg",
@@ -29,7 +29,7 @@
       "backgroundColor": "#FFFFFF"
     },
     "android": {
-      "package": "com.joelitho.sportConnect",
+      "package": "com.joelitho.ibori",
       "foregroundImage": "./assets/images/ibori.jpeg",
       "backgroundColor": "#FFFFFF",
       "permissions": [
@@ -45,7 +45,7 @@
         "NSPhotoLibraryUsageDescription": "L'application a besoin d'accéder à vos photos pour vous permettre de modifier votre photo de profil.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "bundleIdentifier": "com.joelitho.sportConnect"
+      "bundleIdentifier": "com.joelitho.ibori"
     },
     "extra": {
       "projectId": "2e55ba75-f69f-4d16-80e7-0b241fdc5155",

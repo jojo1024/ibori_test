@@ -12,11 +12,11 @@ import {
     ActivityIndicator,
     Keyboard
 } from 'react-native';
+import { COLORS } from '../theme/colors';
 import CustomTextInput from '../components/CustomTextInput';
 import CustomButton from '../components/CustomButton';
 import PhoneInput from '../components/PhoneInput';
 import { useLoginForm } from '../hooks/useLoginForm';
-import { COLORS } from '../theme/colors';
 
 export default function LoginScreen() {
     const [formState, formHandlers] = useLoginForm();
@@ -25,7 +25,7 @@ export default function LoginScreen() {
     const isTablet = width > 768;
 
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={[styles.container, Platform.OS === 'ios' && styles.iosContainer]}>
             <KeyboardAvoidingView
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
                 style={styles.keyboardView}
@@ -144,6 +144,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: COLORS.backgroundLight,
+    },
+    iosContainer: {
+        backgroundColor: COLORS.primary,
     },
     keyboardView: {
         flex: 1,

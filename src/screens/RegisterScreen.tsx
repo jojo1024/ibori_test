@@ -9,7 +9,8 @@ import {
     KeyboardAvoidingView,
     Platform,
     Dimensions,
-    ActivityIndicator
+    ActivityIndicator,
+    View
 } from 'react-native';
 import { useRegisterScreen } from '../hooks/useRegisterScreen';
 import { COLORS } from '../theme/colors';
@@ -91,7 +92,7 @@ export default function RegisterScreen() {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={[styles.container, Platform.OS === 'ios' && styles.iosContainer]}>
             <KeyboardAvoidingView
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
                 style={styles.keyboardView}
@@ -169,6 +170,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: COLORS.white,
+    },
+    iosContainer: {
+        backgroundColor: COLORS.primary,
     },
     keyboardView: {
         flex: 1,
