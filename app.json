@@ -29,7 +29,7 @@
       "backgroundColor": "#FFFFFF"
     },
     "android": {
-      "package": "com.joelitho.ibori",
+      "package": "com.joelitho.iboriapp",
       "foregroundImage": "./assets/images/ibori.jpeg",
       "backgroundColor": "#FFFFFF",
       "permissions": [
@@ -45,7 +45,7 @@
         "NSPhotoLibraryUsageDescription": "L'application a besoin d'accéder à vos photos pour vous permettre de modifier votre photo de profil.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "bundleIdentifier": "com.joelitho.ibori"
+      "bundleIdentifier": "com.joelitho.iboriapp"
     },
     "extra": {
       "projectId": "2e55ba75-f69f-4d16-80e7-0b241fdc5155",
