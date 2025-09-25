@@ -1,4 +1,4 @@
-# SportConnect 🏆
+# SportConnect 🏆 X
 
 Application mobile de mise en relation sportive locale permettant de trouver ou organiser des matchs de foot, basket et tennis autour de soi.
 
