@@ -30,13 +30,13 @@ const RootNavigator = () => {
     useAuthInitialization();
 
     return (
-        <SafeAreaProvider style={styles.container}>
+        <SafeAreaProvider >
             <NavigationContainer>
                 <StatusBar
                     backgroundColor={Platform.OS === 'android' ? COLORS.primary : undefined}
                     barStyle="light-content"
                 />
-                {Platform.OS === 'ios' && <View style={styles.iosStatusBarBackground} />}
+                {/* {Platform.OS === 'ios' && <View style={styles.iosStatusBarBackground} />} */}
                 <Stack.Navigator
                     initialRouteName={isAuthenticated ? "MainTabs" : "Welcome"}
                     screenOptions={{ headerShown: false }}
