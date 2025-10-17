@@ -5,9 +5,9 @@
     "version": "1.0.2",
     "scheme": "Ibori",
     "orientation": "portrait",
-    "icon": "./assets/images/ibori.jpeg",
+    "icon": "./assets/images/ibori_logo.jpg",
     "userInterfaceStyle": "light",
-    "primaryColor": "#FFA500",
+    "primaryColor": "#38B6F9",
     "plugins": [
       [
         "expo-dev-client",
@@ -24,14 +24,12 @@
       ]
     ],
     "splash": {
-      "image": "./assets/images/ibori.jpeg",
-      "resizeMode": "contain",
+      "image": "./assets/images/ibori_logo.jpg",
+      "resizeMode": "cover",
       "backgroundColor": "#FFFFFF"
     },
     "android": {
-      "package": "com.joelitho.iboriapp",
-      "foregroundImage": "./assets/images/ibori.jpeg",
-      "backgroundColor": "#FFFFFF",
+      "package": "com.joelitho.ibori",
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.READ_EXTERNAL_STORAGE",
@@ -45,7 +43,7 @@
         "NSPhotoLibraryUsageDescription": "L'application a besoin d'accéder à vos photos pour vous permettre de modifier votre photo de profil.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "bundleIdentifier": "com.joelitho.iboriapp"
+      "bundleIdentifier": "com.joelitho.ibori"
     },
     "extra": {
       "projectId": "2e55ba75-f69f-4d16-80e7-0b241fdc5155",
